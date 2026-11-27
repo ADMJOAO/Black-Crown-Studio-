@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Black Crown Barbearia. Estilo, elegância e cuidado em cada detalhe.">
+  <title>Black Crown | Barbearia</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #111111;
+      color: #f5f0e8;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #090909;
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #29231b;
+    }
+
+    .logo {
+      color: #d5ad62;
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #d5ad62;
+    }
+
+    .hero {
+      min-height: 570px;
+      padding: 90px 8%;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(90deg, #080808 25%, rgba(8,8,8,.72)),
+        url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1400');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 570px;
+    }
+
+    .tag {
+      color: #d5ad62;
+      letter-spacing: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 68px);
+      line-height: 1.1;
+      margin: 20px 0;
+    }
+
+    h1 span {
+      color: #d5ad62;
+    }
+
+    .hero p {
+      color: #c2c2c2;
+      margin-bottom: 30px;
+      max-width: 450px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #c49b54;
+      color: #111;
+      padding: 14px 25px;
+      border-radius: 3px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: .3s;
+    }
+
+    .button:hover {
+      background: #edce91;
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #aaa;
+    }
+
+    .gold {
+      color: #d5ad62;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #1b1b1b;
+      border: 1px solid #393027;
+      padding: 28px;
+      border-radius: 5px;
+      transition: .3s;
+    }
+
+    .service-card:hover {
+      border-color: #d5ad62;
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      margin-bottom: 12px;
+    }
+
+    .service-card p {
+      color: #aaa;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .price {
+      color: #d5ad62;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .about {
+      background: #191919;
+      text-align: center;
+    }
+
+    .about p {
+      color: #bbb;
+      max-width: 650px;
+      margin: 15px auto 0;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: #bbb;
+      margin: 12px 0 25px;
+    }
+
+    footer {
+      background: #080808;
+      text-align: center;
+      padding: 25px;
+      color: #888;
+      border-top: 1px solid #29231b;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 490px;
+        padding: 65px 7%;
+      }
+
+      section {
+        padding: 60px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">♛ BLACK CROWN</div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <div class="tag">ESTILO • ELEGÂNCIA • PERSONALIDADE</div>
+        <h1>Seu estilo.<br>Suas <span>regras.</span></h1>
+        <p>
+          Mais que um corte, uma experiência.
+          Descubra o cuidado e a precisão de uma
+          barbearia feita para quem valoriza seu estilo.
+        </p>
+        <a href="#contato" class="button">AGENDAR HORÁRIO</a>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="section-title">
+        <div class="tag">O QUE OFERECEMOS</div>
+        <h2>Nossos <span class="gold">Serviços</span></h2>
+        <p>Cuidado e qualidade em cada detalhe.</p>
+      </div>
+
+      <div class="services">
+        <div class="service-card">
+          <h3>Corte Masculino</h3>
+          <p>Cortes modernos e tradicionais com acabamento preciso.</p>
+          <div class="price">R$ 40,00</div>
+        </div>
+
+        <div class="service-card">
+          <h3>Barba</h3>
+          <p>Modelagem e acabamento para valorizar seu visual.</p>
+          <div class="price">R$ 30,00</div>
+        </div>
+
+        <div class="service-card">
+          <h3>Corte + Barba</h3>
+          <p>Uma experiência completa para renovar seu estilo.</p>
+          <div class="price">R$ 60,00</div>
+        </div>
+
+        <div class="service-card">
+          <h3>Sobrancelha</h3>
+          <p>Acabamento cuidadoso para completar seu visual.</p>
+          <div class="price">R$ 15,00</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="tag">NOSSA IDENTIDADE</div>
+      <h2>Mais que uma <span class="gold">barbearia.</span></h2>
+      <p>
+        A Black Crown nasceu para oferecer um ambiente
+        onde estilo, confiança e qualidade se encontram.
+        Cada detalhe importa. Cada cliente merece o melhor.
+      </p>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="tag">ESTAMOS ESPERANDO VOCÊ</div>
+      <h2>Seu próximo visual começa <span class="gold">aqui.</span></h2>
+      <p>Entre em contato e agende seu horário.</p>
+      <a
+        class="button"
+        href="https://wa.me/5511999999999"
+        target="_blank"
+        rel="noopener"
+      >
+        AGENDAR PELO WHATSAPP
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Black Crown Barbearia. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
+  
